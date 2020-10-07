@@ -163,7 +163,10 @@ top: 10%;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
         transform: scale(0.98) translateY(-2px);
 }
-
+.phone{
+    font-size: 1rem;
+    opacity: 4;
+}
 
 /* 4. Responsiveness */
 @media screen and (max-width: 799px) {
