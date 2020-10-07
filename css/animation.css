@@ -17,7 +17,8 @@
 .hr,
 .description,
 .contact,
-.social li {
+.social li,
+.phone{
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
     animation-fill-mode: both;
@@ -30,6 +31,16 @@
     } 
     to {
     transform: scaleX(1);
+    }
+    }
+@keyframes slideUp2 {
+    from {
+    opacity: 0;
+    transform: translateY(1rem);
+    } 
+to {
+    opacity: 0.6;
+    transform: translateY(0);
     }
     }
 @keyframes picImage {
@@ -110,6 +121,10 @@ to {
             animation-name: slideUp;
             animation-timing-function: cubic-bezier(0.5,0,0.5,1.5);
         }
+           .phone{
+             animation-name: slideUp2;
+    
+        }
             .name {
                 animation-delay: 100ms;
                 } .job {
@@ -134,3 +149,7 @@ to {
 .social li:nth-child(3) {
                     animation-delay: 1.2s;
                     } 
+.phone{
+animation-delay: 1.4s;
+    
+}
